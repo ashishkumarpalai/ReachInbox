@@ -16,7 +16,7 @@ const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 
 googleOauthRouter.get("/auth/google", (req, res) => {
   const authUrl = client.generateAuthUrl({
-    access_type: "offline",
+    // access_type: "offline",
     scope: [
       "https://www.googleapis.com/auth/gmail.readonly",
       "https://www.googleapis.com/auth/gmail.modify",
